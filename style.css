@@ -1,8 +1,8 @@
-  body * {
+  /* div * {
     border: 1px solid grey;
     margin: 8px;
     padding: 8px;
-  }
+  } */
   
 
 body {
@@ -12,17 +12,20 @@ body {
     background-position: center;
 }
 
-h1 {
-    font-size: 84px;
-    color: rgb(26, 26, 26);
-    font-family: Arial, Helvetica, sans-serif;
+
+
+.header {
+    display: flex;
+    justify-content: center;
 }
 
-p {
-    color: rgb(26, 26, 26);
-    font-family: Arial, Helvetica, sans-serif;
-}
 
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .nav a {
     color: rgb(26, 26, 26);
     font-family: Arial, Helvetica, sans-serif;
@@ -32,3 +35,52 @@ p {
     font-weight: bold;
     letter-spacing: 8px;
 }
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+}
+.portfolio a {
+    margin: 50px;
+    transition: .2s;
+}
+.portfolio a:hover {
+  transform: scale(1.1); 
+}
+
+
+
+.footer {
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(26, 26, 26)
+    color: white;
+    text-align: center;
+    }
+
+
+
+
+
+
+h1 {
+        font-size: 84px;
+        color: rgb(26, 26, 26);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+p {
+        color: rgb(26, 26, 26);
+        font-family: Arial, Helvetica, sans-serif;
+    }
