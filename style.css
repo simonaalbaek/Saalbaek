@@ -1,34 +1,8 @@
-.grid-container {
-    display: grid;
-    grid: template columns 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 0.3fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      ". header ."
-      ". nav ."
-      " main main main"
-      " portfolio portfolio portfolio"
-      "om-mig om-mig om-mig"
-      "footer footer footer";
+  body * {
+    border: 1px solid grey;
+    margin: 8px;
+    padding: 8px;
   }
-  
-  .header { grid-area: header;
-}
-
-  .nav { grid-area: nav; 
-}
-  
-  .main { grid-area: main; 
-}
-  
-  .portfolio { grid-area: portfolio; 
-}
-  
-  .footer { grid-area: footer; 
-}
-  
-  .om-mig { grid-area: om-mig; 
-}
   
 
 body {
