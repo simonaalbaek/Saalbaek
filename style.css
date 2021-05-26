@@ -50,6 +50,7 @@ body {
 .portfolio a {
     margin: 50px;
     transition: .2s;
+  
 }
 .portfolio a:hover {
   transform: scale(1.1); 
@@ -85,7 +86,7 @@ h1 {
 h2 {
     color: rgb(26, 26, 26);
     font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
+    text-decoration: none; 
     font-size: 20px;
     padding: 25px;
     font-weight: bold;
@@ -93,23 +94,10 @@ h2 {
     
 }    
 
-h2 a{
-    color: rgb(26, 26, 26);
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 25px;
-    font-weight: bold;
-    text-align: center;
-    
-} 
+
+
 
 p {
         color: rgb(26, 26, 26);
         font-family: Arial, Helvetica, sans-serif;
     }
-
-    @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
-        [class*="nav"] {
-          width: 100%;
