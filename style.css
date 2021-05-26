@@ -1,4 +1,4 @@
-  /* div * {
+ /* div * {
     border: 1px solid grey;
     margin: 8px;
     padding: 8px;
@@ -50,9 +50,12 @@ body {
 .portfolio a {
     margin: 50px;
     transition: .2s;
+    text-decoration: none;
   
 }
-.portfolio a:hover {
+
+
+.portfolio img:hover {
   transform: scale(1.1); 
 }
 
@@ -60,18 +63,13 @@ body {
 
 .footer {
     position:static;
-    width: 100%;
-    background-color: rgb(26, 26, 26);
-    text-align: center;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    display: flex;
+    justify-content: center;
+     
     }
-    .footer p {
-        color: #fdfdfd;
-    }
-
+.footer img {
+    margin-left: 50px;
+}
 
 
 
