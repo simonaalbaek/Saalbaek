@@ -1,6 +1,9 @@
- div * {
-   /*  border: 1px solid grey; 
-   /* margin: 8px;
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* border: 1px solid grey; 
+   / margin: 8px;
     padding: 8px; */
   } 
   
@@ -69,7 +72,7 @@
 }
 .mig {
     display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 
 
@@ -89,11 +92,13 @@
     display: flex;
     justify-content: center;
     flex-flow: wrap; 
+    text-align: center;
 }
 .portfolio a {
     margin-left: 50px;
     margin-right: 50px;
     text-decoration: none;
+
 }
 .portfolio img:hover {
   transition: .5s;
@@ -112,7 +117,6 @@
     display: flex;
     justify-content: center;
     flex-flow: wrap-reverse;
-    
 }
 .om-tekst {
     border: 0px solid black;
@@ -139,6 +143,7 @@
     justify-content: flex-start;
     margin-top: 100px;
     padding: 10px;
+    width: 100%;
      
 }
 .footer p {
@@ -185,6 +190,14 @@ p {
 
     /* Tablet */
     @media screen and (max-width: 768px) {
+        .mig {
+            width: 100%;
+            }
+        }
 
     /* Mobil */
     @media screen and (max-width: 600px) {
+        .mig {
+            width: 100%;
+            }
+        }
