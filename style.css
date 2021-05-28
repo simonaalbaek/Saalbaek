@@ -72,9 +72,11 @@
 }
 .mig {
     display: flex;
-    justify-content: center;    
+    justify-content: center; 
 }
-
+.mig img {
+    width: 50%;
+}
 
 
 
@@ -119,7 +121,6 @@
     flex-flow: wrap-reverse;
 }
 .om-tekst {
-    border: 0px solid black;
     width: 650px;
     height: fit-content;
     word-wrap: break-word;
@@ -135,32 +136,71 @@
 
 
 
-
 .footer {
-    background-color: black;
+    background-color: rgb(12, 12, 12);
     display: flex;
-    justify-content: space-between 20px; 
-    justify-content: flex-start;
+    bottom: 0;
+    justify-content: space-between; 
     margin-top: 100px;
     padding: 10px;
     width: 100%;
      
 }
 .footer p {
-    margin-left: auto;
     color: gray;
+    display: flex;
+    margin-top: auto;
 }
 .footer img {
-    margin-left: 50px;
     filter: invert(1);
+    margin: 10px;
 }
-
-
-
-.info {
+.icon {
     display: flex;
     justify-content: center;
 }
+
+
+
+
+
+
+
+
+
+/*foto video style*/
+
+
+.fototekst {
+    text-align: center;
+}
+
+.foto{
+    text-align: center;
+    margin: 4px;
+}
+
+
+.videotekst {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.videobox {
+    margin: 5px;
+}
+
+
+
+
+
 
 
 h1 {
@@ -182,22 +222,70 @@ h2 {
 
 
 
-
 p {
         color: rgb(26, 26, 26);
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+        
     }
 
-    /* Tablet */
+
+
+
+
+
+ /* Tablet */
     @media screen and (max-width: 768px) {
-        .mig {
+        .mig img{
+
             width: 100%;
-            }
         }
+
+        .portpic img {
+            width: 90%;
+        }
+
+        .om img {
+            width: 50%;
+        }
+
+        .footer p{
+            font-size: 5;
+        }
+       
+       
+
+
+
+
+
+
 
     /* Mobil */
     @media screen and (max-width: 600px) {
-        .mig {
+        .mig img {
             width: 100%;
             }
+
+        .footer {
+            font-size: 5pt;
+        }
+
+        .nav img {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .videotekst img {
+            width:80%;
+            height: 80px;
+            margin-top: 100px;
+
+        }
+
+        .fototekst img {
+            width:70%;
+            height: 100px;
+        }
+
         }
