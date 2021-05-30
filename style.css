@@ -59,6 +59,9 @@
 
 
 
+
+
+
 .main {
     display: flex;
     flex-direction: column;
@@ -77,6 +80,10 @@
 .mig img {
     width: 50%;
 }
+
+
+
+
 
 
 
@@ -107,6 +114,12 @@
   transform: scale(1.1); 
 }
 
+.portfolio h2 {
+    text-align: center;
+}
+
+
+
 
 
 
@@ -136,11 +149,15 @@
 
 
 
+
+
+
+
 .footer {
     background-color: rgb(12, 12, 12);
     display: flex;
     bottom: 0;
-    justify-content: space-between; 
+    justify-content: flex-start; 
     margin-top: 100px;
     padding: 10px;
     width: 100%;
@@ -158,6 +175,119 @@
 .icon {
     display: flex;
     justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* om mig */
+
+.infotekst{
+    background-color: aqua;
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    
+}
+.info img {
+    margin: auto;
+   
+}
+
+
+
+
+
+
+
+
+/* kontakt */
+.mail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.mail a {
+    text-align: center;
+}
+.mail h2 {
+    text-align: center;
+}
+.mail img:hover {
+    transition: .5s;
+    transform: scale(1.1); 
+  }
+
+
+.kald {
+    text-align: center;
+    margin-top: 100px;
+}
+.kald h2 {
+    text-align: center;
+}
+
+
+  
+
+
+
+
+
+
+
+
+/*Animation og Illustration*/
+
+.animationtekst h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.animationer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.tegninger h2 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.tegninger {
+    text-align: center;
+   
+}
+.tegninger img {
+    margin: 15px;
+    border: rgb(12, 12, 12) 5px;
+    border-style: solid;
+    
+}
+
+
+.sprite {
+	width: 500px;
+	height: 500px;
+	background: url('flip.png') 0 0 no-repeat;
+	animation: play 1.7s steps(25) infinite;
+}
+@keyframes play {
+	0%{background-position:0px;}
+   100% { background-position: -12500px; }
 }
 
 
@@ -202,6 +332,11 @@
 
 
 
+
+
+
+
+/* fonts */
 
 h1 {
         font-size: 84px;
@@ -252,7 +387,17 @@ p {
         .footer p{
             font-size: 5;
         }
+        .kald img {
+            width: 90%;
+        }
+        .kald h2{
+            margin-bottom: 200px;
+        }
+        .mail img {
+            width: 100%;
+        }
        
+        
        
 
 
@@ -267,7 +412,7 @@ p {
             width: 100%;
             }
 
-        .footer {
+        .footer p{
             font-size: 5pt;
         }
 
@@ -288,4 +433,24 @@ p {
             height: 100px;
         }
 
+        .sprite {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .quote img {
+            width: 90%;
+        }
+
+        .mail img {
+            width: 70%;
+        }
+        .mail h2 {
+            font-size: 20px;
+        }
+
+        .kald h2 {
+            font-size: 20px;
         }
